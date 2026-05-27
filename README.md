@@ -1,2 +1,14 @@
-# DRISHTI
-DRISHTI is a smart assistive glasses ecosystem designed to solve 4 major disability challenges using AI, Computer Vision, and IoT. It is a two-device modular system -- Glasses + Gloves - both working independently and together as one ecosystem.  Inspiration: MIT SignAloud gloves (one-way). DRISHTI improves on this by adding two-way communication.
+```mermaid
+graph TD
+    subgraph System 1: Gloves
+    A[Sensors: Flex + MPU6050] -->|I2C| B[ESP32]
+    B -->|ESP-NOW / UDP| C[Laptop Backend: i3/4GB]
+    C -->|Random Forest| D[Hindi Speech: pyttsx3]
+    end
+
+    subgraph System 2: Glasses
+    E[Pi Camera + Mic] -->|I2S / CSI| F[Pi Zero 2W]
+    F -->|USB OTG / Video Stream| G[Pi 4 Backend]
+    G -->|YOLOv8 ONNX / Vosk| H[Bone Conduction / OLED]
+    end
+```
