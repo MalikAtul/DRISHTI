@@ -216,3 +216,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+### --- DRISHTI Custom Overrides --- ###
+# Ignore local Python virtual environments and model checkpoints
+.venv/
+venv/
+*.pt
+*.onnx
+*.joblib
+*.pkl
+
+# Ignore temporary hardware compilation files (Arduino / PlatformIO)
+.pio/
+.clangd/
+build/
+*.hex
+*.elf
+
+# Ignore OS-specific system trash files
+.DS_Store
+Thumbs.db
