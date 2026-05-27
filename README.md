@@ -1,3 +1,8 @@
+[![License: GPL v3](https://shields.io)](https://gnu.org)
+[![Python Version](https://shields.io)](https://python.org)
+[![Hardware](https://shields.io)]()
+[![Stage](https://shields.io)]()
+
 ```mermaid
 graph TD
     subgraph System 1: Gloves
