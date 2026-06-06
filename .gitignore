@@ -235,3 +235,4 @@ build/
 # Ignore OS-specific system trash files
 .DS_Store
 Thumbs.db
+vosk-hindi-model/
